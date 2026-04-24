@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player_controller.gd" id="1_player"]
+[ext_resource type="Script" path="res://scripts/enemy_ai.gd" id="2_enemy"]
+
+[node name="Main" type="Node3D"]
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_player")
+
+[node name="Enemy" type="CharacterBody3D" parent="."]
+position = Vector3(0, 0, -6)
+script = ExtResource("2_enemy")
